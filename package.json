@@ -1,0 +1,22 @@
+{
+  "name": "blog-project",
+  "version": "1.0.0",
+  "description": "Blog website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eternalAbyss/Blog-project.git"
+  },
+  "keywords": [
+    "final-project"
+  ],
+  "author": "Utkarsh Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eternalAbyss/Blog-project/issues"
+  },
+  "homepage": "https://github.com/eternalAbyss/Blog-project#readme"
+}
