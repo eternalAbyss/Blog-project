@@ -1,0 +1,9 @@
+body {
+    margin: 0px;
+}
+
+shadow {
+    /* background: #FFFFFF; */
+    box-shadow: 0px 22px 133px rgba(20, 20, 20, 0.13), 0px 2.75474px 16.6537px rgba(20, 20, 20, 0.065);
+    border-radius: 10px;
+}
