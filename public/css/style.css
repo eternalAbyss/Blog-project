@@ -1,5 +1,9 @@
 body {
     margin: 0px;
+    background-image: url("./../Images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;
 }
 
 shadow {

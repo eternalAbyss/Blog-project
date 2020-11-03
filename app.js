@@ -47,9 +47,13 @@ app.use((req, res, next) =>{
     next()
 })
 
+// Static folder middleware
+app.use(express.static(__dirname + '/public'))
+
 // Routes 
 app.use('/', require('./routes/index'))
 app.use('/users', require('./routes/users'))
+app.use('/articles', require('./routes/articles'))
 
 const PORT = process.env.PORT || 8000
 
