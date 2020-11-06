@@ -34,6 +34,10 @@ app.use(session({
 
 // Passport middleware
 app.use(passport.initialize())
+app.use(function (req, res, next) {
+    res.locals.login = req.isAuthenticated()
+    next()
+})
 app.use(passport.session())
 
 // Connect flash

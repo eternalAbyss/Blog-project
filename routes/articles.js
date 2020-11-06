@@ -1,5 +1,6 @@
 const express = require('express')
 const router = express.Router()
+const {ensureAuthenticated} = require('../config/auth')
 
 // Article model
 const Article = require('../models/Article')
@@ -17,10 +18,10 @@ router.get('/', (req,res) => {
 })
 
 // Write article
-router.get('/write', (req,res)=> { res.render('write') })
+router.get('/write', ensureAuthenticated, (req,res)=> { res.render('write') })
 
 // Article extended
-router.get('/:id',(req,res)=>{
+router.get('/:id', ensureAuthenticated, (req,res)=>{
     // // console.log(String(req.params.id))
     // // res.end()
     // const article  = Article.findOne({_id: String(req.params.id)})
@@ -37,7 +38,7 @@ router.get('/:id',(req,res)=>{
 
 
 // Article Handle
-router.post('/write', (req,res) => {
+router.post('/write', ensureAuthenticated, (req,res) => {
     const { author, title, article } = req.body
     let errors = []
 
