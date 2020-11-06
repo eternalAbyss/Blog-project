@@ -1,12 +1,12 @@
 <div class="container">
-    <h1 class="mb-3">Welcome</h1>
-    <h4 class="mb-4">
+    <h1 class="mb-3 display-4">Article Section</h1>
+    <h5 class="mb-4">
         this is the article section, here is a list of all the articles present on our platform 
         you can read by clicking on them or else you can write your own blog <a href="/articles/write" class="link">here...</a>
-    </h4>
+    </h5>
     <hr class="mt-4">
     <% articles.forEach( function(article) { %>
-        <div class="card shadow bg-light mt-4">
+        <div class="card shadow mt-4">
             <div class="card-body">
                 <div class="card-title mb-2">
                     <a href="/articles/<%=article._id%>" class="nav-link text-dark"><h1><%= article.title %></h1></a>
