@@ -9,10 +9,10 @@
         <div class="card shadow bg-light mt-4">
             <div class="card-body">
                 <div class="card-title mb-2">
-                    <a href="/articles/<%=article._id%>" class="link text-dark"><h1><%= article.title %></h1></a>
+                    <a href="/articles/<%=article._id%>" class="nav-link text-dark"><h1><%= article.title %></h1></a>
                 </div>
                 <!-- <p class='card-text mb-2'><%= article.article %></p> -->
-                <p class='card-text mb-2'> by : <%= article.author %></p>
+                <p class='card-text mb-2 ml-4'> by : <%= article.author %></p>
             </div> 
         </div>
     <% }) %>

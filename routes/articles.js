@@ -22,10 +22,6 @@ router.get('/write', ensureAuthenticated, (req,res)=> { res.render('write') })
 
 // Article extended
 router.get('/:id', ensureAuthenticated, (req,res)=>{
-    // // console.log(String(req.params.id))
-    // // res.end()
-    // const article  = Article.findOne({_id: String(req.params.id)})
-    // res.render('extended', {article})
     Article.findOne({ _id: String(req.params.id)})
         .then(article => {
             if(article) {

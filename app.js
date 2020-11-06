@@ -5,6 +5,7 @@ const flash = require('connect-flash')
 const session = require('express-session')
 const passport = require('passport')
 
+
 const app = express()
 
 // Passport config
@@ -34,8 +35,9 @@ app.use(session({
 
 // Passport middleware
 app.use(passport.initialize())
-app.use(function (req, res, next) {
+app.use((req, res, next) => {
     res.locals.login = req.isAuthenticated()
+    res.locals.user = req.user
     next()
 })
 app.use(passport.session())
