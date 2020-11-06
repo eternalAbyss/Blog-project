@@ -1,6 +1,9 @@
 # Blog-project
 Blogging website for final submission as the semester project.
 
+## Hosting
+-> The website is hosted at https://mysterious-tor-88202.herokuapp.com/ 
+
 ## To run
 1. Please clone the repository
 2. Move to the root folder
